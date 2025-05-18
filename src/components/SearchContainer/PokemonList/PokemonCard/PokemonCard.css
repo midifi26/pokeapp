@@ -1,0 +1,43 @@
+/* PokemonCard.css */
+
+article {
+  background: linear-gradient(to bottom right, #ffffff, #f1f1f1);
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 1.5rem;
+  max-width: 300px;
+  width: 90%;
+  margin: 1rem auto;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+article:hover {
+  transform: translateY(-4px);
+}
+
+article h2 {
+  font-size: 1.8rem;
+  color: #e3350d; /* Rojo Pokéball */
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+article img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  margin-bottom: 1rem;
+}
+
+article p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+article p strong {
+  color: #2a75bb; /* Azul Pokémon */
+}
