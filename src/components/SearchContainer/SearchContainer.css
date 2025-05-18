@@ -1,0 +1,42 @@
+/* Contenedor principal */
+div {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* TÍTULO */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff1c1c;
+  text-align: center;
+  margin: 0.5rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Verdana', sans-serif;
+}
+
+/* Imagen con id welcome-image */
+div img{
+  width: 100%;
+  max-height: 100%; /* que no se pase del contenedor */
+  object-fit: contain; /* mantén proporción sin recortar */
+  display: block;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+/* Responsive para h1 */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}

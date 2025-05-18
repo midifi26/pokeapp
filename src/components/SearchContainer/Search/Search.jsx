@@ -12,15 +12,17 @@ const Search = ({onSearch}) => {
 const handleSubmit = (e) => {
       e.preventDefault();
       console.log(inputValue);
-      onSearch(inputValue); // invocar la función add pasada por props
+      onSearch(inputValue); // invocar la función unSearch pasada por props
       setInputValue("");
     };
-  return <div>
+  return (
+  <div>
     <form onSubmit={handleSubmit}>
-      <input type="text" value={inputValue} placeholder="Search for a Pokemon" onChange={handleChange}/>
+      <input type="text" value={inputValue} placeholder="Busca un Pokemon" onChange={handleChange}/>
       <button type="submit">Search</button>
     </form>
-  </div>;
+  </div>
+  )
 };
 
 export default Search;
