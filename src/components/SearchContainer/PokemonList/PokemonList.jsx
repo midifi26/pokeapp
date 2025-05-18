@@ -1,6 +1,7 @@
 import React from "react";
 import PokemonCard from "./PokemonCard";
 
+
 const PokemonList = ({ pokemonList }) => {
   return (
     <div>
