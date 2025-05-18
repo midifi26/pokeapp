@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from './components/Header';
 import SearchContainer from './components/SearchContainer';
 import PokemonForm from './components/PokemonForm';
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      
           <h1>Pokemon Search</h1>
           <Header/>
           <Routes>
@@ -17,7 +17,6 @@ function App() {
             <Route path="/new" element={<PokemonForm/>} />
             <Route path="/pokemon/:id" element={<PoKemonDetails/>} />
           </Routes>
-      </BrowserRouter>
     </>)
 }
 
