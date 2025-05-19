@@ -4,11 +4,11 @@ import PokemonCard from "./PokemonCard";
 
 const PokemonList = ({ pokemonList }) => {
   return (
-    <div>
+    <section>
       {pokemonList.map((pokemon) => (
         <PokemonCard key={pokemon.name} pokemon={pokemon} />
       ))}
-    </div>
+    </section>
   );
 };
 
