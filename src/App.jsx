@@ -5,6 +5,8 @@ import SearchContainer from './components/SearchContainer';
 import PokemonForm from './components/PokemonForm';
 import PoKemonDetails from './components/PoKemonDetails';
 
+//import { PokemonContext } from "./context/UserContext";
+
 function App() {
 
   return (
@@ -17,6 +19,7 @@ function App() {
             <Route path="/new" element={<PokemonForm/>} />
             <Route path="/pokemon/:id" element={<PoKemonDetails/>} />
           </Routes>
+      
     </>)
 }
 

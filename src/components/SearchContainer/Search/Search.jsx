@@ -34,6 +34,7 @@ const Search = ({onSearch}) => {
   //   };
 return (
     <div>
+      
       <input
         type="text"
         value={inputValue}
