@@ -27,8 +27,7 @@ const PoKemonDetails = () => {
       <img
         src={pokemon.sprites.other["official-artwork"].front_default}
         alt={pokemon.name}
-        style={{ width: "200px" }}
-      />
+        className="pokemon-details" />
       <p>Altura: {(pokemon.height * 10) / 100} m</p>
       <p>Peso: {(pokemon.weight / 10).toFixed(1)} kg</p>
       <p>Tipo: {pokemon.types.map((t) => t.type.name).join(", ")}</p>

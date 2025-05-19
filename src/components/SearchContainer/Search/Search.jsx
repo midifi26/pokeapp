@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { useContext } from "react";
+import { PokemonContext } from "../../../context/PokemonContext";
 import "./Search.css";
 
 
@@ -25,13 +27,6 @@ const Search = ({onSearch}) => {
     }
   }, [debaunceValue, onSearch]);
 
-
-  // const handleSubmit = (e) => {
-  //     e.preventDefault();
-  //     console.log(inputValue);
-  //     onSearch(inputValue); // invocar la función unSearch pasada por props
-  //     setInputValue("");
-  //   };
 return (
     <div>
       
