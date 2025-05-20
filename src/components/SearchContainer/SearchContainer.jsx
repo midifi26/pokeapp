@@ -1,10 +1,14 @@
 import React, { useState } from "react";
+import { useContext } from "react";
+//import { PokemonContext } from "../../context/PokemonContext";
 import Search from "./Search";
 import PokemonList from "./PokemonList";
 import "./SearchContainer.css";
 
 const SearchContainer = () => {
+
   const [pokemonList, setPokemonList] = useState([]);
+  //const { createdPokemon } = useContext(PokemonContext);
 
   const searchPokemon = async (pokemonName) => {
     const name = pokemonName.toLowerCase();
@@ -17,7 +21,6 @@ const SearchContainer = () => {
 
       const data = await response.json();
 
-      // Ahora comprobamos por ID, no por nombre de entrada
       const alreadyExists = pokemonList.some((p) => p.id === data.id);
       if (alreadyExists) return;
 
@@ -45,4 +48,3 @@ const SearchContainer = () => {
 };
 
 export default SearchContainer;
-

@@ -7,13 +7,13 @@ const Header = () => {
     <nav>
       <ul>
         <li>
-          <Link to="/">SearchContainer</Link>
+          <Link to="/">Inicio</Link>
         </li>
         <li>
-          <Link to="/new">PokemonForm</Link>
+          <Link to="/new">Crea un pokemon</Link>
         </li>
         <li>
-          <Link to="/pokemon/:id">PokemonDetails </Link>
+          <Link to="/pokemon/25">Detalles del pokemon</Link>
         </li>
       </ul>
     </nav>
