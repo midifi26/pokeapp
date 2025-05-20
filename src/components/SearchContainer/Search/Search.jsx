@@ -23,6 +23,7 @@ const Search = ({onSearch}) => {
   useEffect(() => {
     if (debaunceValue.trim() !== "") {
       onSearch(debaunceValue);
+      setInputValue("");
     }
   }, [debaunceValue, onSearch]);
 
