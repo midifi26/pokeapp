@@ -1,0 +1,58 @@
+/* Search.css */
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+}
+
+input[type="text"] {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  min-width: 220px;
+}
+
+input[type="text"]:focus {
+  border-color: #ff1c1c;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #ff1c1c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #cc1515;
+}
+
+@media (max-width: 500px) {
+  form {
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,47 @@
+/* Contenedor de todas las tarjetas */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Tarjeta individual */
+article {
+  flex: 1 1 100%; /* Móvil: una por fila */
+  max-width: 300px;
+  background: linear-gradient(to bottom right, #ffffff, #f1f1f1);
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 1rem;
+  margin: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+}
+
+/* Tablet: 2 por fila */
+@media (min-width: 600px) {
+  article {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+/* Escritorio: 4 por fila */
+@media (min-width: 900px) {
+  article {
+    flex: 1 1 calc(25% - 2rem);
+  }
+}
+
+/* Imagen del Pokémon */
+article img {
+  width: 120px;
+  height: auto;
+  margin: 0.5rem 0;
+}
+
