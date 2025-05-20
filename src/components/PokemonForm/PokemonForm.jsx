@@ -1,33 +1,17 @@
-import React, {useEffect, useState}from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { useContext } from "react";
-import { PokemonContext } from "../../context/PokemonContext";
 import "./PokemonForm.css";
 
-// const pokemonTypes = [
-//   "normal", "fire", "water", "electric", "grass", "ice", "fighting", "poison",
-//   "ground", "flying", "psychic", "bug", "rock", "ghost", "dragon", "dark",
-//   "steel", "fairy"
-// ];
-
-
-const PokemonForm = () => {
-  const {addPokemon} = useContext(PokemonContext);
+const PokemonForm = (onPokemonCreated) => {
   const navigate = useNavigate();
 
   const {register, handleSubmit, formState: {errors}} = useForm();
 
-  const onSubmit = (data) => {
-    data.id= parseInt(data.id);
-    addPokemon(data);
-    navigate('/');
-  }
-
     return (
     <div className="form-container">
       <h2>Nuevo Pokémon</h2>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form >
 
         {/* ID */}
         <label>ID:</label>

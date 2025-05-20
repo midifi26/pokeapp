@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useContext } from "react";
-import { PokemonContext } from "../../../context/PokemonContext";
+//import { PokemonContext } from "../../../context/PokemonContext";
 import "./Search.css";
 
 
@@ -11,16 +11,16 @@ const Search = ({onSearch}) => {
   const handleChange = (e) => {
     setInputValue(e.target.value);
   };
-
+  
   useEffect(() => {
     const timeout = setTimeout(() => {
       setDebounceValue(inputValue);
-    }, 2000); // tiempo de espera (2000ms)
+    }, 1500); // tiempo de espera (1500)
 
-    return () => clearTimeout(timeout); // limpia si vuelve a escribir antes del tiempo
+    return () => clearTimeout(timeout);
   }, [inputValue]);
 
-  // Ejecutar la búsqueda cuando el valor debounced cambia
+  // Ejecuta la búsqueda cuando el valor debounced cambia
   useEffect(() => {
     if (debaunceValue.trim() !== "") {
       onSearch(debaunceValue);
