@@ -1,14 +1,13 @@
 /* Contenedor principal */
 div {
   width: 100%;
-  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content:center;
 }
 
 /* TÍTULO */
@@ -28,9 +27,7 @@ div img{
   max-height: 95%; 
   max-width: 1400px;
   object-fit: contain; 
-  display: block;
-  margin: 0;
-  padding: 0;
+  display: flex;
   user-select: none;
 }
 

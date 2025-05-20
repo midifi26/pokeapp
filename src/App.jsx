@@ -3,7 +3,6 @@ import Header from './components/Header';
 import SearchContainer from './components/SearchContainer';
 import PokemonForm from './components/PokemonForm';
 import PokemonDetails from './components/PokemonDetails';
-//import { PokemonProvider } from "./context/PokemonContext";
 
 function App() {
   return (
